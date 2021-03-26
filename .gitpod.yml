@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: pip install -r ./requirements.txt
+    command: cp -r /workspace/hemlock-template/.jupyter /home/gitpod/
+
+github:
+  prebuilds:
+    master: true
+    addLabel: true
+
+ports:
+  - port: 8888
+    onOpen: open-browser

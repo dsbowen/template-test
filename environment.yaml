@@ -1,0 +1,7 @@
+dependencies:
+  - python=3.9
+  - ipykernel
+  - pip
+  - pip:
+    - hemlock-survey
+  - pyyaml
